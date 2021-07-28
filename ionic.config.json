@@ -1,0 +1,7 @@
+{
+  "name": "100h",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
