@@ -4,7 +4,7 @@
   <p class="ion-text-center">{{ description }}</p>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { IonImg } from '@ionic/vue'
 import { defineComponent } from 'vue'
 

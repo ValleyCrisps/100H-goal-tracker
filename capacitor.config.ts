@@ -1,10 +1,10 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import { CapacitorConfig } from '@capacitor/cli'
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: '100h',
+  appName: '100H Goal Tracker',
   webDir: 'dist',
   bundledWebRuntime: false
-};
+}
 
-export default config;
+export default config

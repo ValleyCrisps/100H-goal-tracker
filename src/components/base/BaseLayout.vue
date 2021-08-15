@@ -15,7 +15,7 @@
   </ion-page>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import {
   IonButtons,
   IonBackButton,

@@ -14,7 +14,7 @@
   </ion-item>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import {
   IonImg,
   IonItem,

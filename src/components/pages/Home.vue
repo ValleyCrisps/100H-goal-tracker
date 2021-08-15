@@ -22,7 +22,7 @@
   </base-layout>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { IonFab, IonFabButton, IonIcon } from '@ionic/vue'
 import ProjectList from '@/components/projects/ProjectList.vue'
 import { defineComponent } from 'vue'
