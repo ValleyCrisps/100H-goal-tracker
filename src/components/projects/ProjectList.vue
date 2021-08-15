@@ -4,7 +4,7 @@
   </ion-list>
 </template>
 
-<script lang="js">
+<script>
 import { IonList } from '@ionic/vue'
 import ProjectListItem from '@/components/projects/ProjectListItem.vue'
 import { defineComponent } from 'vue'

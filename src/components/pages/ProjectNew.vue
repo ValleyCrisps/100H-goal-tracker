@@ -4,7 +4,7 @@
   </base-layout>
 </template>
 
-<script lang="js">
+<script>
 import ProjectInputForm from '@/components/projects/ProjectInputForm.vue'
 import { defineComponent } from 'vue'
 

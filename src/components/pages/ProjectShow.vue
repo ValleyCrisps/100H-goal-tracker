@@ -13,20 +13,20 @@
   </base-layout>
 </template>
 
-<script lang="js">
-import { defineComponent } from 'vue'
+<script>
 import ProjectOverview from '@/components/projects/ProjectOverview.vue'
 
-export default defineComponent({
+export default {
   name: 'ProjectShow',
 
   components: { ProjectOverview },
 
   computed: {
     project() {
-      // return this.$store.getters.project(Number(this.$route.params.id))
-      return this.$store.getters.project(this.$route.params.id)
+      return this.$store.getters['projects/getProjectById'](
+        Number(this.$route.params.id)
+      )
     }
   }
-})
+}
 </script>

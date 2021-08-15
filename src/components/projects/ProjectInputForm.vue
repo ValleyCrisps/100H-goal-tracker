@@ -28,7 +28,7 @@
   </form>
 </template>
 
-<script lang="js">
+<script>
 import {
   IonButton,
   IonIcon,
@@ -45,7 +45,7 @@ import { defineComponent } from 'vue'
 import {
   Camera,
   CameraResultType,
-  CameraSource,
+  CameraSource
   // Photo
 } from '@capacitor/camera'
 import { isPlatform } from '@ionic/vue'
@@ -97,7 +97,7 @@ export default defineComponent({
           path: photo.path
         })
         base64Data = file.data
-      } else{
+      } else {
         const response = await fetch(photo.webPath)
         const blob = await response.blob()
         // base64Data= await convertBlobToBase64(blob)

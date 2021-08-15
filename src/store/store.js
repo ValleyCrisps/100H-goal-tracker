@@ -1,6 +1,6 @@
 // import { InjectionKey } from '@vue/runtime-core'
-import { createStore, Store } from 'vuex'
-import { projects } from '@/data/projects'
+import { createStore } from 'vuex'
+import projects from '@/store/modules/projects'
 
 // interface Project {
 //   id: number
@@ -22,30 +22,7 @@ import { projects } from '@/data/projects'
 // export const key: InjectionKey<Store<State>> = Symbol()
 
 const store = createStore({
-  state: {
-    projects
-  },
-  getters: {
-    projects(state) {
-      return state.projects
-    },
-    project(state) {
-      return id => {
-        return state.projects.find(p => p.id === id)
-      }
-    }
-  },
-  mutations: {
-    addProject(state, project) {
-      project.id = new Date().toISOString()
-      state.projects.unshift(project)
-    }
-  },
-  actions: {
-    addProject(context, project) {
-      context.commit('addProject', project)
-    }
-  }
+  modules: { projects }
 })
 
 export default store

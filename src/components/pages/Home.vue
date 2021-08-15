@@ -22,7 +22,7 @@
   </base-layout>
 </template>
 
-<script lang="js">
+<script>
 import { IonFab, IonFabButton, IonIcon } from '@ionic/vue'
 import ProjectList from '@/components/projects/ProjectList.vue'
 import { defineComponent } from 'vue'
@@ -40,7 +40,7 @@ export default defineComponent({
 
   computed: {
     projects() {
-      return this.$store.getters.projects
+      return this.$store.getters['projects/getProjects']
     }
   },
 
