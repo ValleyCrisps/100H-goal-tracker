@@ -3,7 +3,7 @@
     <ion-list>
       <ion-item>
         <ion-label position="floating">Title</ion-label>
-        <ion-input type="text" required v-model="inputName" />
+        <ion-input type="text" required v-model="name" />
       </ion-item>
       <ion-item>
         <ion-thumbnail slot="start">
@@ -18,6 +18,10 @@
           <ion-icon slot="start" :icon="camera"></ion-icon>
           Take photo
         </ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Goal</ion-label>
+        <ion-input type="number" required v-model="goal" />
       </ion-item>
       <ion-item>
         <ion-label position="floating">Description</ion-label>
@@ -68,7 +72,8 @@ export default defineComponent({
   data() {
     return {
       camera,
-      inputName: '',
+      name: '',
+      goal: null,
       inputImageUrl: '',
       inputDescription: '',
       previewImageUrl: ''
@@ -108,8 +113,9 @@ export default defineComponent({
 
     submitForm() {
       const project = {
-        name: this.inputName,
+        name: this.name,
         image: this.inputImageUrl,
+        goal: this.goal,
         description: this.inputDescription
       }
       this.$emit('save-project', project)

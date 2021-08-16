@@ -15,7 +15,7 @@ export default defineComponent({
 
   methods: {
     saveProject(project) {
-      this.$store.dispatch('addProject', project)
+      this.$store.dispatch('projects/addProject', project)
       this.$router.replace('/home')
     }
   }

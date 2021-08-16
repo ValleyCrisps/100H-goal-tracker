@@ -4,12 +4,7 @@
     :back-button="true"
   >
     <div v-if="!project">Could not find project.</div>
-    <project-overview
-      v-else
-      :image="project.image"
-      :title="project.name"
-      :description="project"
-    ></project-overview>
+    <project-overview v-else :project="project"></project-overview>
   </base-layout>
 </template>
 

@@ -75,6 +75,10 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9; */
 
+  /** global **/
+  --ion-background-color: #fcf9f1;
+  --ion-background-color-rgb: 0, 13, 55;
+
   /** medium **/
   --ion-color-medium: #1f5198;
   --ion-color-medium-rgb: 31, 81, 152;

@@ -44,3 +44,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped>
+ion-item {
+  --background: var(--ion-color-pale);
+}
+</style>

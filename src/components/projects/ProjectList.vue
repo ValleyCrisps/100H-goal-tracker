@@ -1,5 +1,9 @@
 <template>
-  <ion-list v-for="project in projects" :key="project.id">
+  <ion-list
+    class="ion-no-padding"
+    v-for="project in projects"
+    :key="project.id"
+  >
     <project-list-item :project="project" />
   </ion-list>
 </template>

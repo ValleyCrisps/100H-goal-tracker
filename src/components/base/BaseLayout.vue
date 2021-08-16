@@ -43,3 +43,10 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped>
+ion-toolbar {
+  --background: var(--ion-color-dark);
+  --color: var(--ion-color-dark-contrast);
+}
+</style>
