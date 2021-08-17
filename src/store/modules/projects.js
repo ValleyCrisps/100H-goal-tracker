@@ -50,6 +50,9 @@ const getters = {
 const actions = {
   addProject(context, project) {
     context.commit('addProject', project)
+  },
+  updateProject(context, project) {
+    context.commit('updateProject', project)
   }
 }
 
@@ -57,6 +60,10 @@ const mutations = {
   addProject(state, project) {
     project.id = Math.floor(Math.random() * 100000000000000)
     state.projects.unshift(project)
+  },
+  updateProject(state, project) {
+    const targetIndex = state.projects.findIndex(p => p.id === project.id)
+    state.projects[targetIndex] = project
   }
 }
 

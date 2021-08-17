@@ -9,8 +9,13 @@
 Functionality:
 
 - [ ] store images in cache
-- [ ] add progress
+- [x] add progress buttons
 - [ ] add graph and stats
+- [ ] edit project
+- [ ] progress unit selection
+- [ ] update status
+- [ ] on completion, change status and color
+- [ ] show completed on milestones page
 
 System architecture:
 
@@ -19,5 +24,4 @@ System architecture:
 Front:
 
 - [ ] progress bar
-- [ ] progress unit selection
 - [ ] redesign input form
